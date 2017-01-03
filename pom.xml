@@ -56,7 +56,7 @@
                     <endpoint>https://api.bintray.com</endpoint>
                     <resource>/packages/funthomas424242/funthomas424242-p2-repositories/ahnen.dsl</resource>
                     <method>PATCH</method>
-                    <file></file>
+                    <file>bintray.json</file>
                     <!-- <queryParams> <n>3</n> <addRequired>1</addRequired> </queryParams> -->
                 </configuration>
                 <executions>
