@@ -24,26 +24,26 @@
     </scm>
 
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>bintray-funthomas424242-snapshots</id>
-            <name>oss-jfrog-artifactory-snapshots</name>
-            <url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
-        </snapshotRepository>
-        <repository>
-            <id>bintray-funthomas424242-releases</id>
-            <name>oss-jfrog-artifactory-releases</name>
-            <url>https://oss.jfrog.org/artifactory/oss-release-local</url>
-        </repository>
-    </distributionManagement>
+    <!--<distributionManagement>-->
+        <!--<snapshotRepository>-->
+            <!--<id>bintray-funthomas424242-snapshots</id>-->
+            <!--<name>oss-jfrog-artifactory-snapshots</name>-->
+            <!--<url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>-->
+        <!--</snapshotRepository>-->
+        <!--<repository>-->
+            <!--<id>bintray-funthomas424242-releases</id>-->
+            <!--<name>oss-jfrog-artifactory-releases</name>-->
+            <!--<url>https://oss.jfrog.org/artifactory/oss-release-local</url>-->
+        <!--</repository>-->
+    <!--</distributionManagement>-->
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>bintray-funthomas424242-releases</id>
-            <name>bintray-plugins</name>
-            <url>http://jcenter.bintray.com</url>
-        </pluginRepository>
-    </pluginRepositories>
+    <!--<pluginRepositories>-->
+        <!--<pluginRepository>-->
+            <!--<id>bintray-funthomas424242-releases</id>-->
+            <!--<name>bintray-plugins</name>-->
+            <!--<url>http://jcenter.bintray.com</url>-->
+        <!--</pluginRepository>-->
+    <!--</pluginRepositories>-->
 
 
     <build>
@@ -52,13 +52,13 @@
                 <groupId>com.github.cjnygard.mvn</groupId>
                 <artifactId>rest-maven-plugin</artifactId>
                 <version>0.1.4</version>
-                <configuration>
-                    <endpoint>https://api.bintray.com</endpoint>
-                    <resource>/packages/funthomas424242/funthomas424242-p2-repositories/ahnen.dsl</resource>
-                    <method>PATCH</method>
-                    <file>bintray.json</file>
-                    <!-- <queryParams> <n>3</n> <addRequired>1</addRequired> </queryParams> -->
-                </configuration>
+                <!--<configuration>-->
+                    <!--<endpoint>https://api.bintray.com</endpoint>-->
+                    <!--<resource>/packages/funthomas424242/funthomas424242-p2-repositories/ahnen.dsl</resource>-->
+                    <!--<method>PATCH</method>-->
+                    <!--<file>bintray.json</file>-->
+                    <!--&lt;!&ndash; <queryParams> <n>3</n> <addRequired>1</addRequired> </queryParams> &ndash;&gt;-->
+                <!--</configuration>-->
                 <executions>
                     <execution>
                         <id>update-package</id>
